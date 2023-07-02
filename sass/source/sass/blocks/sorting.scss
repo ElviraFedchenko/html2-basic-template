@@ -1,7 +1,7 @@
 .sorting {
   box-sizing: border-box;
   background-color: #f8f8f8;
-  padding-top: 50px;
+  padding-top: 37px;
   padding-bottom: 45px;
 
   @media (min-width: $tablet-width) {
@@ -17,11 +17,13 @@
   @media (min-width: $tablet-width) {
     margin-top: 41px;
     justify-content: flex-end;
+    margin-right: 10px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
     justify-content: flex-end;
+    margin-right: 10px;
   }
 }
 
@@ -61,6 +63,11 @@
   &:focus {
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 30px 30px;
+    margin: 0;
+  }
 }
 
 .sorting__link {
@@ -68,6 +75,10 @@
   align-items: center;
   justify-content: center;
   padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .sorting__title-desk {
@@ -81,6 +92,7 @@
 
 .sorting__title {
   font-family: $montserrat-bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 32px;
   margin: 0;
@@ -89,8 +101,16 @@
 }
 
 .sorting__title h3 {
+  font-family: $montserrat-bold;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
   margin: 0;
   padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+  }
 }
 
 .sorting__description {
@@ -99,6 +119,10 @@
   line-height: 20px;
   margin: 0;
   padding: 0 0 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 6px 0 20px;
+}
 }
 
 .sorting__buy {
@@ -161,11 +185,23 @@
   border-radius: 4px;
   background-image: url(../../img/svg/arrow_down.svg);
   background-repeat: no-repeat;
- background-size: 10px 6px;
-  background-position: center right 7px;
+  background-size: 10px 6px;
+  background-position: center right 0;
 
   &:focus,
   &:hover {
     background-color: #f0ebff;
   }
+}
+
+.sorting__img {
+  @media (min-width: $tablet-width) {
+    width: 130px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 29px;
+    outline: 0;
+}
+
 }
